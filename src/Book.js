@@ -2,6 +2,10 @@ export default class Book {
 
 
     showBooks(url) {
+        //делает кнопку Load more, не активной после нажатия 1 раз, пока не загрузится ответ
+        document.querySelector('.main-block2__load-more-btn').disabled = true
+        document.querySelector('.load-spinner').classList.remove('load-spinner_hide')
+
         fetch(url)
             .then(response => response.json())
             .then(json => {
@@ -87,6 +91,10 @@ export default class Book {
                 })
 
                 booksField.insertAdjacentHTML('beforeend', out)
+
+                //делает кнопку Load more, снова активной после выполнения запроса
+                document.querySelector('.main-block2__load-more-btn').disabled = false
+                document.querySelector('.load-spinner').classList.add('load-spinner_hide')
             })
             .catch(err => console.log('Ошибка: ', err))
     }

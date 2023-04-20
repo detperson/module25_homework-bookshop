@@ -46,7 +46,8 @@ module.exports = {
                 {
                     from: path.resolve(__dirname, 'src/images/slider'),
                     to: path.resolve(__dirname, 'dist/images/slider')
-                }
+                },
+                { from: path.resolve(__dirname, 'src/images/no-cover.png'), to: path.resolve(__dirname, 'dist/images') }
             ],
         }),
         new MiniCssExtractPlugin({
