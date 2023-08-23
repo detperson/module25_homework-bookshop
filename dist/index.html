@@ -1,1 +1,265 @@
-<!doctype html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1"> <meta http-equiv="X-UA-Compatible" content="ie=edge"> <link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Open+Sans&display=swap" rel="stylesheet"> <title>Bookshop - книжный интернет-магазин</title> <script defer="defer" src="main.e52a1f92a36afbfddeae.js"></script><link href="main.e52a1f92a36afbfddeae.css" rel="stylesheet"></head> <body> <div class="wrapper"> <header class="header"> <div class="header__container _container"> <a href="./index.html" class="header__logo"> Bookshop </a> <nav class="header__menu menu"> <ul class="menu__list"> <li class="menu__item"> <a href="./index.html" class="menu__link menu-active">books</a> </li> <li class="menu__item"> <a href="./index.html" class="menu__link">audiobooks</a> </li> <li class="menu__item"> <a href="./index.html" class="menu__link">stationery & gifts</a> </li> <li class="menu__item"> <a href="./index.html" class="menu__link">blog</a> </li> </ul> <ul class="menu__icons"> <li class="menu__icon"> <a href="" class="menu__iconlink"> <img src="images/user-menu-logo.53eb7453fd12000f24b2.svg" alt="login"> </a> </li> <li class="menu__icon"> <a href="" class="menu__iconlink"> <img src="images/search-menu-logo.06300a9cfb4d0b42de2d.svg" alt="search"> </a> </li> <li class="menu__icon"> <a href="" class="menu__iconlink shop-bag"> <img src="images/shop_bag-menu-logo.652df15d9cf1c5459c2c.svg" alt="shopping-bag"> <div class="shop-bag__counter" style="display:none">1</div> </a> </li> </ul> </nav> </div> </header> <main class="page"> <div class="page__main-block main-block"> <div class="main-block__container _container"> <div class="main-block__slider"> <div class="main-block__color-block1"> <a href=""> <p class="main-block__color-block1_text"> Change old book on new <img class="main-block__color-block1_arrow" src="images/arrow-right.e9f51e4343fc7f9ad49a.svg"> </p> </a> </div> <div class="main-block__color-block2"> <a href=""> <p class="main-block__color-block2_text"> top 100 books 2022 <img class="main-block__color-block2_arrow" src="images/arrow-right.e9f51e4343fc7f9ad49a.svg"> </p> </a> </div> <div class="main-block__images"></div> <div class="main-block__slider-dots"></div> </div> </div> </div> <div class="page__main-block2 main-block2"> <div class="main-block2__container _container"> <div class="main-block2__category-menu category-menu"> <div class="category-menu__background"></div> <ul class="category-menu__list"> <li class="category-menu__item category-active"> Architecture </li> <li class="category-menu__item"> Art & Fashion </li> <li class="category-menu__item"> Biography </li> <li class="category-menu__item"> Business </li> <li class="category-menu__item"> Crafts & Hobbies </li> <li class="category-menu__item"> Drama </li> <li class="category-menu__item"> Fiction </li> <li class="category-menu__item"> Food & Drink </li> <li class="category-menu__item"> Health & Wellbeing </li> <li class="category-menu__item"> History & Politics </li> <li class="category-menu__item"> Humor </li> <li class="category-menu__item"> Poetry </li> <li class="category-menu__item"> Psychology </li> <li class="category-menu__item"> Science </li> <li class="category-menu__item"> Technology </li> <li class="category-menu__item"> Travel & Maps </li> </ul> </div> <div class="main-block2__body"> <div class="main-block2__books"> </div> <div class="main-block2__load-more"> <button class="main-block2__load-more-btn"> <span class="load-spinner load-spinner_hide"></span> LOAD MORE </button> </div> </div> </div> </div> </main> </div> </body> </html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;900&family=Open+Sans&display=swap" rel="stylesheet">
+<!--    <link rel="stylesheet" href="./styles/style.css">-->
+    <title>Bookshop - книжный интернет-магазин</title>
+<script defer="defer" src="main.108bb72291b34abda198.js"></script><link href="main.108bb72291b34abda198.css" rel="stylesheet"></head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="./index.html" class="header__logo">
+                    Bookshop
+                </a>
+                <nav class="header__menu menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link menu-active">books</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">audiobooks</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">stationery & gifts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="./index.html" class="menu__link">blog</a>
+                        </li>
+                    </ul>
+                    <ul class="menu__icons">
+                        <li class="menu__icon">
+                            <a href="" class="menu__iconlink">
+                                <img src="images/user-menu-logo.53eb7453fd12000f24b2.svg" alt="login">
+                            </a>
+                        </li>
+                        <li class="menu__icon">
+                            <a href="" class="menu__iconlink">
+                                <img src="images/search-menu-logo.06300a9cfb4d0b42de2d.svg" alt="search">
+                            </a>
+                        </li>
+                        <li class="menu__icon">
+                            <a href="" class="menu__iconlink shop-bag">
+                                <img src="images/shop_bag-menu-logo.652df15d9cf1c5459c2c.svg" alt="shopping-bag">
+                                <div class="shop-bag__counter" style="display: none">1</div>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <main class="page">
+            <div class="page__main-block main-block">
+                <div class="main-block__container _container">
+                    <div class="main-block__slider">
+                        <div class="main-block__color-block1">
+                            <a href="">
+                                <p class="main-block__color-block1_text">
+                                    Change old book on new
+                                    <img class="main-block__color-block1_arrow" src="images/arrow-right.e9f51e4343fc7f9ad49a.svg">
+                                </p>
+                            </a>
+                        </div>
+                        <div class="main-block__color-block2">
+                            <a href="">
+                                <p class="main-block__color-block2_text">
+                                    top 100 books 2022
+                                    <img class="main-block__color-block2_arrow" src="images/arrow-right.e9f51e4343fc7f9ad49a.svg">
+                                </p>
+                            </a>
+                        </div>
+                        <div class="main-block__images"></div>
+                        <div class="main-block__slider-dots"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page__main-block2 main-block2">
+                <div class="main-block2__container _container">
+                    <div class="main-block2__category-menu category-menu">
+                        <div class="category-menu__background"></div>
+                        <ul class="category-menu__list">
+                            <li class="category-menu__item category-active">
+                                Architecture
+                            </li>
+                            <li class="category-menu__item">
+                                Art & Fashion
+                            </li>
+                            <li class="category-menu__item">
+                                Biography
+                            </li>
+                            <li class="category-menu__item">
+                                Business
+                            </li>
+                            <li class="category-menu__item">
+                                Crafts & Hobbies
+                            </li>
+                            <li class="category-menu__item">
+                                Drama
+                            </li>
+                            <li class="category-menu__item">
+                                Fiction
+                            </li>
+                            <li class="category-menu__item">
+                                Food & Drink
+                            </li>
+                            <li class="category-menu__item">
+                                Health & Wellbeing
+                            </li>
+                            <li class="category-menu__item">
+                                History & Politics
+                            </li>
+                            <li class="category-menu__item">
+                                Humor
+                            </li>
+                            <li class="category-menu__item">
+                                Poetry
+                            </li>
+                            <li class="category-menu__item">
+                                Psychology
+                            </li>
+                            <li class="category-menu__item">
+                                Science
+                            </li>
+                            <li class="category-menu__item">
+                                Technology
+                            </li>
+                            <li class="category-menu__item">
+                                Travel & Maps
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-block2__body">
+                        <div class="main-block2__books">
+<!--                            <div class="main-block2__book-card book-card" data-id="">-->
+<!--                                <div class="book-card__image">-->
+<!--                                    <img src="./images/book-cover.png" alt="book-cover">-->
+<!--                                </div>-->
+<!--                                <div class="book-card__body">-->
+<!--                                    <div class="book-card__author">-->
+<!--                                        Kevin Kwan-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__title">-->
+<!--                                        Crazy rich asians-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__rating">-->
+<!--                                        <div class="book-card__rating_stars">-->
+<!--                                            <div class="rating-stars stars4"></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="book-card__rating_review">-->
+<!--                                            252 review-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <p class="book-card__review">-->
+<!--                                        The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip..-->
+<!--                                    </p>-->
+<!--                                    <div class="book-card__price">-->
+<!--                                        $4.99-->
+<!--                                    </div>-->
+<!--                                    <button class="book-card__btn-bye"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="main-block2__book-card book-card" data-id="">-->
+<!--                                <div class="book-card__image">-->
+<!--                                    <img src="./images/book-cover.png" alt="book-cover">-->
+<!--                                </div>-->
+<!--                                <div class="book-card__body">-->
+<!--                                    <div class="book-card__author">-->
+<!--                                        Kevin Kwan-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__title">-->
+<!--                                        Crazy rich asians-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__rating">-->
+<!--                                        <div class="book-card__rating_stars">-->
+<!--                                            <div class="rating-stars stars4"></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="book-card__rating_review">-->
+<!--                                            252 review-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <p class="book-card__review">-->
+<!--                                        The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip..-->
+<!--                                    </p>-->
+<!--                                    <div class="book-card__price">-->
+<!--                                        $4.99-->
+<!--                                    </div>-->
+<!--                                    <button class="book-card__btn-bye"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="main-block2__book-card book-card" data-id="">-->
+<!--                                <div class="book-card__image">-->
+<!--                                    <img src="./images/book-cover.png" alt="book-cover">-->
+<!--                                </div>-->
+<!--                                <div class="book-card__body">-->
+<!--                                    <div class="book-card__author">-->
+<!--                                        Kevin Kwan-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__title">-->
+<!--                                        Crazy rich asians-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__rating">-->
+<!--                                        <div class="book-card__rating_stars">-->
+<!--                                            <div class="rating-stars stars4"></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="book-card__rating_review">-->
+<!--                                            252 review-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <p class="book-card__review">-->
+<!--                                        The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip..-->
+<!--                                    </p>-->
+<!--                                    <div class="book-card__price">-->
+<!--                                        $4.99-->
+<!--                                    </div>-->
+<!--                                    <button class="book-card__btn-bye"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="main-block2__book-card book-card" data-id="">-->
+<!--                                <div class="book-card__image">-->
+<!--                                    <img src="./images/book-cover.png" alt="book-cover">-->
+<!--                                </div>-->
+<!--                                <div class="book-card__body">-->
+<!--                                    <div class="book-card__author">-->
+<!--                                        Kevin Kwan-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__title">-->
+<!--                                        Crazy rich asians-->
+<!--                                    </div>-->
+<!--                                    <div class="book-card__rating">-->
+<!--                                        <div class="book-card__rating_stars">-->
+<!--                                            <div class="rating-stars stars4"></div>-->
+<!--                                        </div>-->
+<!--                                        <div class="book-card__rating_review">-->
+<!--                                            252 review-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <p class="book-card__review">-->
+<!--                                        The outrageously funny debut novel about three super-rich, pedigreed Chinese families and the gossip..-->
+<!--                                    </p>-->
+<!--                                    <div class="book-card__price">-->
+<!--                                        $4.99-->
+<!--                                    </div>-->
+<!--                                    <button class="book-card__btn-bye"></button>-->
+<!--                                </div>-->
+<!--                            </div>-->
+                        </div>
+                        <div class="main-block2__load-more">
+                            <button class="main-block2__load-more-btn">
+                                <span class="load-spinner load-spinner_hide"></span>
+                                    LOAD MORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+<!--    <script type="module" src="index.js"></script>-->
+</body>
+</html>
